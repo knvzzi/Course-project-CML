@@ -1,0 +1,195 @@
+/*------------------------------------HEADER------------------------------------*/
+@import 'media';
+.header {
+    height: 1100px;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size:cover;
+    font-size:18px;
+    padding: 20px 0;
+    .logo {
+        align-items: center;
+        justify-content: center;
+        max-width:1700px;
+        margin: 0 auto;
+        align-items: center;
+       img{
+        width: 80px;
+        height: 100px;
+       }
+       transition-duration: .2s;
+       transition-timing-function: linear;
+   }
+   .logo:hover{
+    transform: scale(1.1);
+   }
+   .header__number{
+    justify-self: flex-end;
+    }
+    .center_txt{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        top: 300px;
+        padding: 0 20px;
+        font-family: 'Roboto';
+        font-style: normal;
+        .first_txt{
+            justify-self: center;
+            text-align: center;
+            margin: 0;
+            padding-bottom: 20px;
+            font-weight: 700;
+            font-size: calc(35px + 20 * (100vw / 1520));
+            line-height: 5vh;
+            letter-spacing: 0.02em;
+            font-variant: all-small-caps;
+            color: #D9C07B;
+
+            transform: translate(0px, 120%);
+            opacity: 0;
+            transition: all 0.8s ease 0s;
+
+            &._active{
+                transform: translate(0px, 0px);
+                opacity: 1;
+            }
+            }
+            p{
+                transform: translate(0px, 120%);
+                opacity: 0;
+                transition: all 0.8s ease 0s; 
+                &._active{
+                    transform: translate(0px, 0px);
+                    opacity: 1;
+                    transition: all 0.8s ease 0.4s; 
+                }
+            }
+        .second_txt{
+            justify-self: center;
+            text-align: center;
+            margin: 0;
+            padding: 5px;
+            font-weight: 400;
+            font-size: calc(20px + 4 * (100vw / 1520));
+            line-height: 40px;
+            color: var(--bg-color);
+
+            }
+        .third_txt{
+            justify-self: center;
+            margin: 0;
+            padding: 5px;
+            font-weight: 400;
+            font-size: calc(20px + 4 * (100vw / 1520));
+            line-height: 40px;
+            color: #FFFFFF;
+
+        }
+    }
+}
+.title{
+    transform: translate(0px, 120%);
+            opacity: 0;
+            transition: all 0.8s ease 0s;
+
+            &._active{
+                transform: translate(0px, 0px);
+                opacity: 1;
+            }
+}
+.first_txt{
+    transform: translate(0px, 120%);
+            opacity: 0;
+            transition: all 0.8s ease 0s;
+
+            &._active{
+                transform: translate(0px, 0px);
+                opacity: 1;
+            }
+}
+.second_txt{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s; 
+    &._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 0.8s ease 0.3s; 
+    }
+}
+.third_txt{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s; 
+    &._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 0.8s ease 0.3s; 
+    }
+}
+
+/*------------------------------------FOOTER------------------------------------*/
+
+.footer{
+    height: auto;
+    background-color: #D9C07B;
+    .footer__container {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;
+        color: #251904;
+        max-height: 143px;
+        margin: 0 10vw;
+        justify-self: center;
+        align-items: center;
+    }
+.menuf{
+    padding-left: 0;
+    justify-content: space-around;
+        .menu__footer {
+            padding-left: 0;
+            align-items: center;
+            gap: 25px;
+        }
+        .menu_item {
+            position: relative;
+            }
+
+        }
+    .menu__link {
+        display: block;
+        margin: 5px;
+        color: #251904;
+        text-decoration: none;
+        margin: 1vh;
+    }
+    .menu__link:hover {
+        color:rgb(37, 25, 4, 0.5);
+    }
+}
+
+/* W3C standard
+   сейчас только для Firefox */
+   * {
+    scrollbar-width: thin;
+    scrollbar-color: #F1F0EE #251904;
+  }
+  
+  /* для Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #F1F0EE;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #251904;
+    border-radius: 5px;
+    border: 3px solid #F1F0EE;
+  }
